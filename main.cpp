@@ -74,7 +74,33 @@ std::string codificar(char c, std::string codificacion)
     }
     if (codificacion == "C2")
     {
-        const char 
+        const char C2[] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U', '0','1','2','3','4','5','6','7','8', '9', ' ', '!', '"', '#', '$', '%','&' ,'\'', '('};
+        for (int i = 0; i < sizeof(C2)/sizeof(C2[0]); i++)
+        {
+            if (c == C2[i])
+            {
+                return std::bitset<5>(i).to_string();   
+            }
+        }
+    }
+    if (codificacion == "C3")
+    {
+        const char C3[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 
+        'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+        '0','1','2','3','4','5','6','7','8', '9',
+        '[', '\\', ']', '^', '_',
+        '{', '|', '}', '~'};
+        for (int i = 0; i < sizeof(C3)/sizeof(C3[0]); i++)
+        {
+            if (c == C3[i])
+            {
+                return std::bitset<6>(i).to_string();   
+            }
+        }
+    }
+    if (codificacion == "C4")
+    {
+         return std::bitset<7>(int(c)-32).to_string();
     }
 }
 
@@ -82,10 +108,16 @@ int main()
 {
     std::string cadena;
     std::cin >> cadena;
+    
+    std::string output = "";
 
-    for (int i = 0; i < cadena.size; i+=2)
+    std::string temp;
+    std::string temp_anterior;
+    
+    for (int i = 0; i < cadena.size(); i+=2)
     {
-        interseccion_minima(cadena[i], cadena[i+1]);
+       temp = interseccion_minima(cadena[i], cadena[i+1]);
+       output += codificar(cadena[i], temp);
     }
 }
 
