@@ -1,6 +1,6 @@
 #include <iostream>
 #include <bitset>
-
+#include <unordered_map>
 bool es_vocal_minuscula(char c){
     const char minusculas[] = {'a', 'e', 'i', 'o', 'u'};
     for (auto i : minusculas)
@@ -85,8 +85,8 @@ std::string codificar(char c, std::string codificacion)
     }
     if (codificacion == "C3")
     {
-        const char C3[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 
-        'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+        const char C3[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 
+        'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
         '0','1','2','3','4','5','6','7','8', '9',
         '[', '\\', ']', '^', '_',
         '{', '|', '}', '~'};
@@ -108,16 +108,88 @@ int main()
 {
     std::string cadena;
     std::cin >> cadena;
-    
     std::string output = "";
 
     std::string temp;
-    std::string temp_anterior;
+    std::string temp_anterior = "C0";
     
-    for (int i = 0; i < cadena.size(); i+=2)
+    for (int i = 0; i < cadena.length() - 1; i+=2)
     {
        temp = interseccion_minima(cadena[i], cadena[i+1]);
-       output += codificar(cadena[i], temp);
+       if (temp_anterior != temp)
+       {
+           if (temp_anterior == "C0")
+           {
+               output += std::bitset<2>(int(temp[1] - '0') - 1).to_string() + " ";
+           }
+           else
+           {
+               if (temp_anterior == "C1")
+               {
+                   output += std::bitset<3>(int(temp[1] - '0')+4).to_string() + " ";
+               }
+               else if (temp_anterior == "C2")
+               {
+                   output += std::bitset<5>(int(temp[1] - '0')+28).to_string() + " ";
+               }
+               else if (temp_anterior == "C3")
+               {
+                   output += std::bitset<6>(int(temp[1] - '0')+60).to_string() + " ";
+               }
+               else if (temp_anterior == "C4")
+               {
+                   output += std::bitset<7>(int(temp[1] - '0')+124).to_string() + " ";
+               }
+           }
+       }
+       output += codificar(cadena[i], temp) + " ";
+       output += codificar(cadena[i+1], temp) + " ";
+       temp_anterior = temp;
     }
+
+    if (cadena.length() % 2 != 0)
+    {
+        if (cadena.length() == 1)
+        {
+            temp = interseccion_minima(cadena.back(), cadena.back());
+            output += std::bitset<2>(int(temp[1] - '0') - 1).to_string() + " "; 
+            output += codificar(cadena.back(), temp);
+        }
+        else
+        {
+            temp = interseccion_minima(cadena[cadena.length()-2], cadena.back());
+        
+            if (temp_anterior != temp)
+            {
+            if (temp_anterior == "C0")
+            {
+                output += std::bitset<2>(int(temp[1] - '0')).to_string() + " ";
+            }
+            else
+            {
+                if (temp_anterior == "C1")
+                {
+                    output += std::bitset<3>(int(temp[1] - '0')+4).to_string() + " ";
+                }
+                else if (temp_anterior == "C2")
+                {
+                    output += std::bitset<5>(int(temp[1] - '0')+12).to_string() + " ";
+                }
+                else if (temp_anterior == "C3")
+                {
+                    output += std::bitset<6>(int(temp[1] - '0')+28).to_string() + " ";
+                }
+                else if (temp_anterior == "C4")
+                {
+                    output += std::bitset<7>(int(temp[1] - '0')+60).to_string() + " ";
+                }
+            }
+            }
+            output += codificar(cadena.back(), temp) + " ";
+        }
+    }
+        
+
+    std::cout << output;
 }
 
