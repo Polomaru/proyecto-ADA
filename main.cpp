@@ -74,7 +74,7 @@ std::string codificar(char c, std::string codificacion)
     }
     if (codificacion == "C2")
     {
-        const char C2[] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U', '0','1','2','3','4','5','6','7','8', '9', ' ', '!', '"', '#', '$', '%','&' ,'\'', '('};
+        const char C2[] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U', '0','1','2','3','4','5','6','7','8', '9', char(32), '!', '"', '#', '$', '%','&' ,'\'', '('};
         for (int i = 0; i < sizeof(C2)/sizeof(C2[0]); i++)
         {
             if (c == C2[i])
@@ -126,19 +126,65 @@ int main()
            {
                if (temp_anterior == "C1")
                {
-                   output += std::bitset<3>(int(temp[1] - '0')+4).to_string() + " ";
+                   if (temp == "C2")
+                   {
+                       output += std::bitset<3>(5).to_string() + " ";
+                   }
+                   if (temp == "C3")
+                   {
+                       output += std::bitset<3>(6).to_string() + " ";
+                   }
+                   if (temp == "C4")
+                   {
+                       output += std::bitset<3>(7).to_string() + " ";
+                   }
+                   
                }
                else if (temp_anterior == "C2")
                {
-                   output += std::bitset<5>(int(temp[1] - '0')+28).to_string() + " ";
+                   if (temp == "C3")
+                   {
+                       output += std::bitset<3>(29).to_string() + " ";
+                   }
+                   if (temp == "C4")
+                   {
+                       output += std::bitset<3>(30).to_string() + " ";
+                   }
+                   if (temp == "C1")
+                   {
+                       output += std::bitset<3>(31).to_string() + " ";
+                   }
                }
                else if (temp_anterior == "C3")
                {
-                   output += std::bitset<6>(int(temp[1] - '0')+60).to_string() + " ";
+                   if (temp == "C4")
+                   {
+                       output += std::bitset<3>(61).to_string() + " ";
+                   }
+                   if (temp == "C1")
+                   {
+                       output += std::bitset<3>(62).to_string() + " ";
+                   }
+                   if (temp == "C2")
+                   {
+                       output += std::bitset<6>(63).to_string() + " ";
+                   }
+                   
                }
                else if (temp_anterior == "C4")
                {
-                   output += std::bitset<7>(int(temp[1] - '0')+124).to_string() + " ";
+                   if (temp == "C1")
+                   {
+                       output += std::bitset<7>(125).to_string() + " ";
+                   }
+                   if (temp == "C2")
+                   {
+                       output += std::bitset<7>(126).to_string() + " ";
+                   }
+                   if (temp == "C3")
+                   {
+                       output += std::bitset<7>(127).to_string() + " ";
+                   }
                }
            }
        }
