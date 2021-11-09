@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{bm}
+
+
+\begin{document}
+\input{titlepage.tex}
+    
+\section*{Ejercicio 2}
+
+\vspace{0.5cm}
+
+\noindent RECIBE: $a_{1}$ de una cadena no vacía $s=\{a_1a_2\cdots a_n\}$ \\
+DEVUELVE: Una cadena $r=\{f_k(a_1)f_k(a_2)\cdots f_k(a_n)\}$ tal que $1 \leq k \leq 4$ y r es
+de tamaño mínimo óptimo
+\begin{algorithmic}[1]
+\item[]{OPT($i$, $j$)}
+\If{($a_i \in C_j)$}
+\State $r=r+f_j(a_i)$
+\Else 
+\State $r=r+``\cdots"$
+\EndIf
+\If{$i = i_{ultimo}$}
+\State \textbf{return} r
+\EndIf
+\State $t_j = ``"$
+\State $t_{(j+1)\%4} = T_{(j+1)\%4}$
+\State $t_{(j+2)\%4} = T_{(j+2)\%4}$
+\State $t_{(j+3)\%4} = T_{(j+3)\%4}$
+\State $i = i+1$
+\State $r=r+min(r+t_1+OPT(i,1),r+t_2+OPT(i,2),
+r+t_3+OPT(i,3), r+t_4+OPT(i,4))$
+\State \textbf{return r} 
+\end{algorithmic}
+
+\end{document}
