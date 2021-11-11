@@ -113,6 +113,8 @@ int main()
     std::string temp;
     std::string temp_anterior = "C0";
     
+    std::string sep = " ";
+
     for (int i = 0; i < cadena.length() - 1; i+=2)
     {
     //    std::cout << cadena.size()<<std::endl; 
@@ -121,7 +123,7 @@ int main()
        {
            if (temp_anterior == "C0")
            {
-               output += std::bitset<2>(int(temp[1] - '0') - 1).to_string() + " ";
+               output += std::bitset<2>(int(temp[1] - '0') - 1).to_string() + sep;
            }
            else
            {
@@ -129,15 +131,15 @@ int main()
                {
                    if (temp == "C2")
                    {
-                       output += std::bitset<3>(5).to_string() + " ";
+                       output += std::bitset<3>(5).to_string() + sep;
                    }
                    if (temp == "C3")
                    {
-                       output += std::bitset<3>(6).to_string() + " ";
+                       output += std::bitset<3>(6).to_string() + sep;
                    }
                    if (temp == "C4")
                    {
-                       output += std::bitset<3>(7).to_string() + " ";
+                       output += std::bitset<3>(7).to_string() + sep;
                    }
                    
                }
@@ -145,30 +147,30 @@ int main()
                {
                    if (temp == "C3")
                    {
-                       output += std::bitset<5>(29).to_string() + " ";
+                       output += std::bitset<5>(29).to_string() + sep;
                    }
                    if (temp == "C4")
                    {
-                       output += std::bitset<5>(30).to_string() + " ";
+                       output += std::bitset<5>(30).to_string() + sep;
                    }
                    if (temp == "C1")
                    {
-                       output += std::bitset<5>(31).to_string() + " ";
+                       output += std::bitset<5>(31).to_string() + sep;
                    }
                }
                else if (temp_anterior == "C3")
                {
                    if (temp == "C4")
                    {
-                       output += std::bitset<6>(61).to_string() + " ";
+                       output += std::bitset<6>(61).to_string() + sep;
                    }
                    if (temp == "C1")
                    {
-                       output += std::bitset<6>(62).to_string() + " ";
+                       output += std::bitset<6>(62).to_string() + sep;
                    }
                    if (temp == "C2")
                    {
-                       output += std::bitset<6>(63).to_string() + " ";
+                       output += std::bitset<6>(63).to_string() + sep;
                    }
                    
                }
@@ -176,21 +178,21 @@ int main()
                {
                    if (temp == "C1")
                    {
-                       output += std::bitset<7>(125).to_string() + " ";
+                       output += std::bitset<7>(125).to_string() + sep;
                    }
                    if (temp == "C2")
                    {
-                       output += std::bitset<7>(126).to_string() + " ";
+                       output += std::bitset<7>(126).to_string() + sep;
                    }
                    if (temp == "C3")
                    {
-                       output += std::bitset<7>(127).to_string() + " ";
+                       output += std::bitset<7>(127).to_string() + sep;
                    }
                }
            }
        }
-       output += codificar(cadena[i], temp) + " ";
-       output += codificar(cadena[i+1], temp) + " ";
+       output += codificar(cadena[i], temp) + sep;
+       output += codificar(cadena[i+1], temp) + sep;
        temp_anterior = temp;
     }
 
@@ -199,7 +201,7 @@ int main()
         if (cadena.length() == 1)
         {
             temp = interseccion_minima(cadena.back(), cadena.back());
-            output += std::bitset<2>(int(temp[1] - '0') - 1).to_string() + " "; 
+            output += std::bitset<2>(int(temp[1] - '0') - 1).to_string() + sep; 
             output += codificar(cadena.back(), temp);
         }
         else
@@ -209,7 +211,7 @@ int main()
        {
            if (temp_anterior == "C0")
            {
-               output += std::bitset<2>(int(temp[1] - '0') - 1).to_string() + " ";
+               output += std::bitset<2>(int(temp[1] - '0') - 1).to_string() + sep;
            }
            else
            {
@@ -217,15 +219,15 @@ int main()
                {
                    if (temp == "C2")
                    {
-                       output += std::bitset<3>(5).to_string() + " ";
+                       output += std::bitset<3>(5).to_string() + sep;
                    }
                    if (temp == "C3")
                    {
-                       output += std::bitset<3>(6).to_string() + " ";
+                       output += std::bitset<3>(6).to_string() + sep;
                    }
                    if (temp == "C4")
                    {
-                       output += std::bitset<3>(7).to_string() + " ";
+                       output += std::bitset<3>(7).to_string() + sep;
                    }
                    
                }
@@ -233,30 +235,30 @@ int main()
                {
                    if (temp == "C3")
                    {
-                       output += std::bitset<5>(29).to_string() + " ";
+                       output += std::bitset<5>(29).to_string() + sep;
                    }
                    if (temp == "C4")
                    {
-                       output += std::bitset<5>(30).to_string() + " ";
+                       output += std::bitset<5>(30).to_string() + sep;
                    }
                    if (temp == "C1")
                    {
-                       output += std::bitset<5>(31).to_string() + " ";
+                       output += std::bitset<5>(31).to_string() + sep;
                    }
                }
                else if (temp_anterior == "C3")
                {
                    if (temp == "C4")
                    {
-                       output += std::bitset<6>(61).to_string() + " ";
+                       output += std::bitset<6>(61).to_string() + sep;
                    }
                    if (temp == "C1")
                    {
-                       output += std::bitset<6>(62).to_string() + " ";
+                       output += std::bitset<6>(62).to_string() + sep;
                    }
                    if (temp == "C2")
                    {
-                       output += std::bitset<6>(63).to_string() + " ";
+                       output += std::bitset<6>(63).to_string() + sep;
                    }
                    
                }
@@ -264,20 +266,20 @@ int main()
                {
                    if (temp == "C1")
                    {
-                       output += std::bitset<7>(125).to_string() + " ";
+                       output += std::bitset<7>(125).to_string() + sep;
                    }
                    if (temp == "C2")
                    {
-                       output += std::bitset<7>(126).to_string() + " ";
+                       output += std::bitset<7>(126).to_string() + sep;
                    }
                    if (temp == "C3")
                    {
-                       output += std::bitset<7>(127).to_string() + " ";
+                       output += std::bitset<7>(127).to_string() + sep;
                    }
                }
            }
        }
-            output += codificar(cadena.back(), temp) + " ";
+            output += codificar(cadena.back(), temp) + sep;
         }
     }
         
