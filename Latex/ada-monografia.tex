@@ -38,4 +38,16 @@ r+t_3+OPT(i,3), r+t_4+OPT(i,4))$
 \State \textbf{return r} 
 \end{algorithmic}
 
+\vspace{1cm}
+
+En la primera recurrencia se calcula la codificación del caracter $s_0$ para posteriormente concatenarlo
+con la mínima longitud de las 4 posibles codificaciones $C_1,C_2,C_3,C_4$ para $s_1$.\\
+Esta recurrencia se realiza para toda la cadena $s$ hasta llegar al caso base $s_n$ donde se retorna $f_n(a_n)$
+siendo así que se calcula todas las posibles combinaciones y se garantiza que se obtiene la solución óptima.\\
+
+\textbf{Complejidad}\\
+Si existen $C_1,C_2,C_3,C_4$ y se calculan todas las posibles codificaciones para todo caracter de $s$.
+Por lo tanto, el algoritmo tiene una complejidad de $O(4^n)$ donde $n$ es la longitud de la cadena.
+
+
 \end{document}
