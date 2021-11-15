@@ -3,3 +3,4 @@
 - Como recibo la cadena en la P2 (Lo hicieron el otro grupo)
 - Puedo hacer la recurrencia exponencial? (Lo hicieron el otro grupo)
 - Puedo poner las 4 transiciones de frente?
+test
