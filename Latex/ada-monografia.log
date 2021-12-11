@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.31)  11 NOV 2021 09:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.31)  11 DEC 2021 13:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -240,7 +240,12 @@ Package pdftex.def Info: logo.jpg  used on input line 16.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/logo.jpg>])
-Underfull \hbox (badness 10000) in paragraph at lines 43--47
+Overfull \hbox (67.77553pt too wide) detected at line 22
+\OML/cmm/m/it/10 OPT\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--57
 
  []
 
@@ -251,16 +256,16 @@ LaTeX Info: Redefining \% on input line 7.
 Here is how much of TeX's memory you used:
  4033 strings out of 483048
  58391 string characters out of 5962771
- 309852 words of memory out of 5000000
+ 311852 words of memory out of 5000000
  19027 multiletter control sequences out of 15000+600000
  536752 words of font info for 39 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 37i,4n,35p,378b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.pdf" (2 pages, 147732 bytes).
+ 37i,8n,35p,378b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.pdf" (2 pages, 158550 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 56 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

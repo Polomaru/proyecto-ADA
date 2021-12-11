@@ -11,7 +11,17 @@
 \begin{document}
 \input{titlepage.tex}
     
-\section*{Pregunta 2}
+
+\section{Pregunta 2}
+\[ OPT(i, j) \begin{cases} 
+    B_j + A_i & i = 0; a_i \subset C_j \\
+    \infty & a_i \not\subset C_j \\
+    min\{OPT(i - 1, j) + A_i, OPT(i - 1, (j+1) \%4) + T_{(j+1) \%4} + A_i,\\
+    OPT(i - 1, (j+2) \%4) + T_{(j+2) \%4} + A_i, \\ OPT(i - 1, (j+3) \%4) + T_{(j+3) \%4} + A_i\} & {caso}_{contrario} 
+ \end{cases}
+\]
+
+\section*{Pregunta 3}
 
 \vspace{0.5cm}
 
