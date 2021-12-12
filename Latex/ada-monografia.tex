@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{mathtools}
 \usepackage{graphicx}
+\usepackage{amsmath}
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
 \usepackage{bm}
@@ -12,43 +13,56 @@
 \input{titlepage.tex}
     
 
+\begin{itemize}
+    \item Sea $s$ una cadena no vacía tal que $s = \{a_1a_2\cdots a_n\}$. 
+    \item $\{C_0, C_1, C_2, C_3\}$ los modos de codificar $a$.
+    \item $B$ una cadena de dos bits $\{00, 01, 10, 11\}$ que indica cual $C$ comienza una 
+    codificación de $s$.
+    \item $\{T_0, T_1, T_2, T_3\}$ las cadenas de transición a otro $C$. Tomando en cuenta que 
+    $T$ puede ser vacío si no se requiere ninguna transición.
+    \item $r$ una codificación de $s$ tal que $r=\{B \cdot C(a_1) \cdot T \cdot C(a_2) \cdot T 
+    \cdot C(a_3) T \cdots T \cdot C(a_n)\}$.
+\end{itemize}
+
 \section{Pregunta 2}
 \[ OPT(i, j) \begin{cases} 
-    B_j + A_i & i = 0; a_i \subset C_j \\
+    B_j + C_j(a_i) & i = 1; a_i \subset C_j \\
     \infty & a_i \not\subset C_j \\
-    min\{OPT(i - 1, j) + A_i, OPT(i - 1, (j+1) \%4) + T_{(j+1) \%4} + A_i,\\
-    OPT(i - 1, (j+2) \%4) + T_{(j+2) \%4} + A_i, \\ OPT(i - 1, (j+3) \%4) + T_{(j+3) \%4} + A_i\} & {caso}_{contrario} 
+    min\{OPT(i - 1, j) + C_j(a_i), & i > 1\\
+    OPT(i - 1, (j+1) \%4) + T_{(j+1) \%4} + C_j(a_i), \\
+    OPT(i - 1, (j+2) \%4) + T_{(j+2) \%4} +C_j(a_i), \\ OPT(i - 1, (j+3) \%4) + T_{(j+3) \%4} + C_j(a_i)\}
  \end{cases}
 \]
 
-\section*{Pregunta 3}
+\section{Pregunta 3}
 
-\vspace{0.5cm}
+\noindent RECIBE: un índice final $i$ de una cadena $s$ y un índice $j$ de $C$.\\
+DEVUELVE: Una cadena $r$ que codifica a $s$ de manera mínima óptima con $C_j(a_i)$.
 
-\noindent RECIBE: $a_{1}$ de una cadena no vacía $s=\{a_1a_2\cdots a_n\}$ \\
-DEVUELVE: Una cadena $r=\{f_k(a_1)f_k(a_2)\cdots f_k(a_n)\}$ tal que $1 \leq k \leq 4$ y r es
-de tamaño mínimo óptimo
 \begin{algorithmic}[1]
 \item[]{OPT($i$, $j$)}
-\If{($a_i \in C_j)$}
-\State $r=r+f_j(a_i)$
-\Else 
-\State $r=r+``\cdots"$
+\If{($a_i \subset C_j)$ and $i = 1$}
+\State \textbf{return} $B_j + C_j(a_i)$
+\ElsIf {($a_i \not\subset C_j)$}
+\State \textbf{return} $\infty$
 \EndIf
-\If{$i = i_{ultimo}$}
-\State \textbf{return} r
-\EndIf
-\State $t_j = ``"$
-\State $t_{(j+1)\%4} = T_{(j+1)\%4}$
-\State $t_{(j+2)\%4} = T_{(j+2)\%4}$
-\State $t_{(j+3)\%4} = T_{(j+3)\%4}$
-\State $i = i+1$
-\State $r=r+min(r+t_1+OPT(i,1),r+t_2+OPT(i,2),
-r+t_3+OPT(i,3), r+t_4+OPT(i,4))$
+\State $A_0 = C_j(a_i)$
+\State $A_1 = T_{(j+1)\%4} + C_j(a_i)$
+\State $A_2 = T_{(j+2)\%4} + C_j(a_i)$
+\State $A_3 = T_{(j+3)\%4} + C_j(a_i)$
+\State $r=min(OPT(i-1,j) + A_0, OPT(i-1,(j+1)\%4) + A_1, OPT(i-1,(j+2)\%4) + A_2, OPT(i-1,(j+3)\%4) + A_3)$
 \State \textbf{return r} 
 \end{algorithmic}
 
 \vspace{1cm}
+
+\noindent RECIBE: un cadena $s$ no vacía.\\
+DEVUELVE: Una cadena que codifica a $s$ de manera mínima óptima.
+\begin{algorithmic}[1]
+\item[]{MIN-COD($s$)}
+\State Sea $a_n$ el caracter final de $s$.  
+\State \textbf{return} $min(OPT(a_n,0), OPT(a_n,1), OPT(a_n,2), OPT(a_n,3))$  
+\end{algorithmic}
 
 En la primera recurrencia se calcula la codificación del caracter $s_0$ para posteriormente concatenarlo
 con la mínima longitud de las 4 posibles codificaciones $C_1,C_2,C_3,C_4$ para $s_1$.\\
@@ -59,5 +73,35 @@ siendo así que se calcula todas las posibles combinaciones y se garantiza que s
 Si existen $C_1,C_2,C_3,C_4$ y se calculan todas las posibles codificaciones para todo caracter de $s$.
 Por lo tanto, el algoritmo tiene una complejidad de $O(4^n)$ donde $n$ es la longitud de la cadena.
 
+
+
+\subsection{Pregunta 5}
+\noindent RECIBE: una cadena $s$.\\
+DEVUELVE: Una cadena $r$ que codifica a $s$ de manera mínima óptima.
+
+\begin{algorithmic}[1]
+\item[]{MIN-COD-DIN($s$)}
+\State Sea $A$ una matriz que guarda la solución.
+\State $B=\{00, 01, 10, 11\}$ tal que que indica cual es el modo de codificación inicial.
+\For {j=1 to 4}
+    \State $A[0][j] = B_j$
+\EndFor
+\For{i = 1 to n}
+    \State $A[i][1] = \infty$
+    \State $A[i][2] = \infty$
+    \State $A[i][3] = \infty$
+    \State $A[i][4] = \infty$
+    \For{j = 1 to 4}
+        \State $M_1 = min\{A[i][j] + C_j(a_i)\}$
+        \State $M_2 = min\{A[i][(j+1)\%4] + C_{(j+1)\%4}(a_i) + T_{(j+1)\%4}\}$
+        \State $M_3 = min\{A[i][(j+2)\%4] + C_{(j+2)\%4}(a_i) + T_{(j+2)\%4}\}$
+        \State $M_4 = min\{A[i][(j+3)\%4] + C_{(j+3)\%4}(a_i) + T_{(j+3)\%4}\}$
+        \State $A[i][j] = {min}_{1 \leq l \leq 4}(M_l)$
+        \State
+    \EndFor
+\EndFor
+\State $r = {min}_{1 \leq k \leq 4}(A[n][k])$
+\State \textbf{return r}  
+\end{algorithmic}
 
 \end{document}
