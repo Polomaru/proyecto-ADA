@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1639334393 "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.tex" "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.pdf" "ada-monografia" 1639334399
+["pdflatex"] 1639424610 "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.tex" "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.pdf" "ada-monografia" 1639424611
   "/etc/texmf/web2c/texmf.cnf" 1631502714 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.aux" 1639334398 432 98099d0660bdcfd34adcad0fe2c54581 ""
-  "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.tex" 1639334388 3863 0cb5614b0c29cdd8559a8174fd974d91 ""
+  "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.aux" 1639424611 432 98099d0660bdcfd34adcad0fe2c54581 ""
+  "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.tex" 1639424610 3930 f7b120de808371510feb94a207f51d15 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -65,13 +65,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1635719302 165012 f177baa1c39a3ebd62c3096a43521a0d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1635719322 4935555 569d826cce1b1419f91591e3f924f52b ""
-  "ada-monografia.aux" 1639334398 432 98099d0660bdcfd34adcad0fe2c54581 "pdflatex"
-  "ada-monografia.tex" 1639334388 3863 0cb5614b0c29cdd8559a8174fd974d91 ""
+  "ada-monografia.aux" 1639424611 432 98099d0660bdcfd34adcad0fe2c54581 "pdflatex"
+  "ada-monografia.tex" 1639424610 3930 f7b120de808371510feb94a207f51d15 ""
   "logo.jpg" 1636429714 33481 28ff72e87d84bb44ec6bec9dea86b578 ""
   "titlepage.tex" 1636610355 718 648f07f8c019a7639c65a6ca76caeab3 ""
   (generated)
   "ada-monografia.log"
-  "ada-monografia.pdf"
-  "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.pdf"
   "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.log"
+  "ada-monografia.pdf"
   "ada-monografia.aux"
+  "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.pdf"
