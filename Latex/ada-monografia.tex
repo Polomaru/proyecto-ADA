@@ -92,10 +92,10 @@ DEVUELVE: Una cadena $r$ que codifica a $s$ de manera mínima óptima.
     \State $A[i][3] = \infty$
     \State $A[i][4] = \infty$
     \For{j = 1 to 4}
-        \State $M_1 = A[i][j] + C_j(a_i)$
-        \State $M_2 = A[i][(j+1)\%4] + C_{(j+1)\%4}(a_i) + T_{(j+1)\%4}$
-        \State $M_3 = A[i][(j+2)\%4] + C_{(j+2)\%4}(a_i) + T_{(j+2)\%4}$
-        \State $M_4 = A[i][(j+3)\%4] + C_{(j+3)\%4}(a_i) + T_{(j+3)\%4}$
+        \State $M_1 = A[i-1][j] + C_j(a_i)$
+        \State $M_2 = A[i-1][(j+1)\%4] + C_{(j+1)\%4}(a_i) + T_{(j+1)\%4}$
+        \State $M_3 = A[i-1][(j+2)\%4] + C_{(j+2)\%4}(a_i) + T_{(j+2)\%4}$
+        \State $M_4 = A[i-1][(j+3)\%4] + C_{(j+3)\%4}(a_i) + T_{(j+3)\%4}$
         \State $A[i][j] = min(M_1, M_2, M_3, M_4)$
         \State
     \EndFor
