@@ -6,7 +6,7 @@
 void random_string(int n = 100) {
     
     srand(time(0));
-    std::ofstream outfile ("./test/in/size100");
+    std::ofstream outfile ("./test/in/codi/randomfile");
  
     for(int i = 0; i < n; i++) {
         std::string c = cod[rand()%4];

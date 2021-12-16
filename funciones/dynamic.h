@@ -69,7 +69,13 @@ std::string min_cod_din(std::string s)
     }
     std::string sreturn = "";
     
-
+    // std::fstream fs("filename.txt", std::ios::out);
+    // for (int i = 0; i < s.size(); ++i) {
+    //     for (int j = 0; j < 4; ++j) {
+    //         fs << std::get<1>(A[i][j])<<" ";
+    //     }
+    // fs << '\n';
+    // }
     int v1[] = { std::get<1>(A[s.size()][0]),std::get<1>(A[s.size()][1]),std::get<1>(A[s.size()][2]),std::get<1>(A[s.size()][3])};
     int minnum = minelement(v1);
     int idlast;
