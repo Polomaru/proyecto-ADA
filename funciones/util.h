@@ -10,6 +10,7 @@
 #include <vector>
 #include <algorithm>
 #include <stdexcept>
+#include <fstream> 
 
 int MAX = 900000;
 
