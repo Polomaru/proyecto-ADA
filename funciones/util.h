@@ -11,8 +11,7 @@
 #include <algorithm>
 #include <stdexcept>
 #include <fstream> 
-
-int MAX = 900000;
+int MAX = 90000000;
 
 std::vector<std::string> B = {"00","01","10","11"};
 std::vector<std::string> cod = {"C1","C2","C3","C4"};
@@ -190,5 +189,10 @@ std::string traduccion(std::string actual, std::string anterior )
 int minelement (int v [])
 {
     return *(std::min_element(v, v + 4));
+}
+
+int roundUp(int numToRound, int multiple) 
+{
+    return ((numToRound + multiple - 1) / multiple) * multiple;
 }
 #endif

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.31)  15 DEC 2021 21:03
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.16)  13 DEC 2021 18:11
->>>>>>> d8b1cb149b75874d2f0f46c6ebda0a983cb8cdd2
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.16)  16 DEC 2021 03:37
 entering extended mode
 **d:/atom/ada/proyecto-ADA/Latex/ada-monografia.tex
 (d:/atom/ada/proyecto-ADA/Latex/ada-monografia.tex
@@ -195,19 +191,11 @@ Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 \symboldsymbols=\mathgroup6
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 209.
-<<<<<<< HEAD
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count269
-\l__pdf_internal_box=\box49
-) (/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.aux (/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/titlepage.tex.aux)
-=======
 ) ("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def"
 File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count270
 \l__pdf_internal_box=\box50
 ) (d:/atom\ada\proyecto-ADA\Latex\ada-monografia.aux
->>>>>>> d8b1cb149b75874d2f0f46c6ebda0a983cb8cdd2
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -245,20 +233,6 @@ LaTeX Info: Redefining \% on input line 12.
 ) ("C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-<<<<<<< HEAD
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
-\openout2 = `titlepage.tex.aux'.
-
-
-No file titlepage.tex.tex.
-[1
-
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-=======
 ) (d:/atom\ada\proyecto-ADA\Latex\titlepage.tex
 <logo.jpg, id=1, 963.6pt x 963.6pt>
 File: logo.jpg Graphic file (type jpg)
@@ -268,34 +242,15 @@ Package pdftex.def Info: logo.jpg  used on input line 16.
  [1
 
 {C:/Users/Paul/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <d:/atom/ada/proyecto-ADA/Latex/logo.jpg>]) [1]
->>>>>>> d8b1cb149b75874d2f0f46c6ebda0a983cb8cdd2
 Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
  []
 
-<<<<<<< HEAD
-[2] (/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.aux (/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/titlepage.tex.aux)
-=======
 [2] (d:/atom\ada\proyecto-ADA\Latex\ada-monografia.aux
->>>>>>> d8b1cb149b75874d2f0f46c6ebda0a983cb8cdd2
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 4042 strings out of 483048
- 58792 string characters out of 5962771
- 312262 words of memory out of 5000000
- 19036 multiletter control sequences out of 15000+600000
- 537058 words of font info for 40 fonts, out of 8000000 for 9000
- 85 hyphenation exceptions out of 8191
- 37i,8n,35p,378b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.pdf" (2 pages, 98408 bytes).
-PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
-=======
  4192 strings out of 481199
  59750 string characters out of 2915352
  329095 words of memory out of 3000000
@@ -307,7 +262,6 @@ PDF statistics:
 Output written on d:/atom\ada\proyecto-ADA\Latex\ada-monografia.pdf (3 pages, 166282 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
->>>>>>> d8b1cb149b75874d2f0f46c6ebda0a983cb8cdd2
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
