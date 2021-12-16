@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.31)  13 DEC 2021 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.31)  15 DEC 2021 21:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -191,9 +191,9 @@ LaTeX Info: Redefining \bm on input line 209.
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count269
 \l__pdf_internal_box=\box49
-) (/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.aux
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
+) (/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.aux (/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/titlepage.tex.aux)
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `ada-monografia.aux'.
 
@@ -231,36 +231,37 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) (/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/titlepage.tex
-<logo.jpg, id=1, 963.6pt x 963.6pt>
-File: logo.jpg Graphic file (type jpg)
-<use logo.jpg>
-Package pdftex.def Info: logo.jpg  used on input line 16.
-(pdftex.def)             Requested size: 137.9979pt x 137.99078pt.
- [1
+))
+\openout2 = `titlepage.tex.aux'.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/logo.jpg>]) [1]
+
+No file titlepage.tex.tex.
+[1
+
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
  []
 
-[2] (/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.aux
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
+[2] (/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.aux (/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/titlepage.tex.aux)
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 4047 strings out of 483048
- 58593 string characters out of 5962771
- 311852 words of memory out of 5000000
- 19041 multiletter control sequences out of 15000+600000
- 537357 words of font info for 41 fonts, out of 8000000 for 9000
+ 4042 strings out of 483048
+ 58792 string characters out of 5962771
+ 312262 words of memory out of 5000000
+ 19036 multiletter control sequences out of 15000+600000
+ 537058 words of font info for 40 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  37i,8n,35p,378b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.pdf" (3 pages, 158694 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "/home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.pdf" (2 pages, 98408 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
