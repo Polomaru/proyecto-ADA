@@ -51,9 +51,6 @@ char decodec4(std::string s)
     return ' ' + number ;
 }
 
-std::vector<std::string> B = {"00","01","10","11"};
-std::vector<std::string> cod = {"C1","C2","C3","C4"};
-
 std::string decode(std::string s)
 {
     std::string sreturn;
