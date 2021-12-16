@@ -23,16 +23,25 @@ $r=\{B \cdot C(a_1) \cdot T \cdot C(a_2) \cdot T \cdot C(a_3) T \cdots T \cdot C
 Utilizar el modo de codificación que permita una codificación mínima para los caracteres 
 $a_i$ y $a_{i+1}$.\\
 
-\noindent RECIBE: un cadena $s$ no vacía.\\
+\noindent RECIBE: un cadena $s$ con un número de caracteres par no vacía.\\
 DEVUELVE: Una cadena $r$ de bits que codifica a $s$ y su tamaño.
 
 \begin{algorithmic}[1]
-\item[]{VORAZ($s$)}
-\For {i = 0 to n - 1}
+\item[]{VORAZ($s$)} 
+\State $C_{j} = C_0$ 
+\For {i = 0 to n - 1, step = 2}
+    \State $C_k$ es el modo mínimo de codificación válido para $a_i$, $a_{i+1}$.
+    \If{$C_j \neq C_k$}
+        \State $r += T_k$
+    \EndIf
+    \State $r$ += $C_k(a_i)$
+    \State $r$ += $C_k(a_{i+1})$
+    \State $j = k$
 \EndFor
-\If{n es par}
-\EndIf
+\State \textbf{return r}
 \end{algorithmic}
+
+\newpage
 
 \subsection{Pregunta 2}
 
