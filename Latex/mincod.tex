@@ -1,5 +1,225 @@
-\section*{Problema de codificación de texto}
+\section{Problema de codificación de texto}
 
 \paragraph{Problema MIN-COD}
 Dada una cadena $s$ sobre el conjunto $C$, encontrar una codificación de $C$ óptima.
 
+\begin{itemize}
+    \item Sea $s$ una cadena no vacía tal que $s = \{a_1a_2\cdots a_n\}$. 
+    \item $\{C_0, C_1, C_2, C_3\}$ los modos de codificar $a$.
+    \item $B$ una cadena de dos bits $\{00, 01, 10, 11\}$ que indica cual $C$ comienza una 
+    codificación de $s$.
+    \item $\{T_0, T_1, T_2, T_3\}$ las cadenas de transición a otro $C$. Tomando en cuenta que 
+    $T$ puede ser vacío si no se requiere ninguna transición.
+\end{itemize}
+
+Podemos suponer que una cadena $s$ siempre puede ser codificada por al menos un modo de 
+codificación $C$. Y decimos que $r$ es una  solución óptima tal que $r$ empieza con una cadena 
+$B$ de dos bits seguido de un número de  codificaciones y transiciones mínimos. 
+$r=\{B \cdot C(a_1) \cdot T \cdot C(a_2) \cdot T \cdot C(a_3) T \cdots T \cdot C(a_n)\}$
+
+\subsection{Pregunta 1}
+
+\paragraph{Heurística Voraz:}
+Utilizar el modo de codificación que permita una codificación mínima para los caracteres 
+$a_i$ y $a_{i+1}$.\\
+
+\noindent RECIBE: un cadena $s$ no vacía.\\
+DEVUELVE: Una cadena $r$ de bits que codifica a $s$ y su tamaño.
+
+\begin{algorithmic}[1]
+\item[]{VORAZ($s$)}
+\For {i = 0 to n - 1}
+\EndFor
+\If{n es par}
+\EndIf
+\end{algorithmic}
+
+\subsection{Pregunta 2}
+
+Sea $X$ una solución óptima para el problema. Existen tres casos dependiendo de la codificación 
+del último caracter $a_n$ de $s$.
+
+\begin{itemize}
+    \item \textbf{Caso 1:} $C_j(a_n) \not\in X$. 
+    En ese caso, $a_n$ no puede ser codificado por el modo $C_j$. Por lo que no existe una 
+    codificación óptima que incluya a $C_j(a_n)$.  
+    \item \textbf{Caso 2:} $C_j(a_n) \in X$.
+    En ese caso, $a_n$ puede ser codificado por el modo $C_j$. Considere que $X' = X / \{a_n\}$.
+    Note que $X'$ es una solución óptima para el subproblema $s={a_1a_2\cdots a_{n-1}}$. 
+    \\¿Porqué? Considere por contradicción que $X'$ no es una solución óptima, entonces existe una 
+    solución $Y'$ para este subproblema que codifica con menor tamaño que $X'$. Luego 
+    $Y = Y' \cup \{n\}$ sería una solución mejor que X para el problema original, siendo esto
+    una contradicción. Tomando en cuenta que debe haber una transición si $a_{n-1}$ no puede ser 
+    codificado por el modo $C_j$.
+\end{itemize}
+
+\paragraph{Lemma 2.1:}
+Sea $OPT(i, j)$ el tamaño de la codificación mínima óptima para el subproblema que considera a 
+la subcadena $s'=\{a_1a_2 \cdots a_{i}\}$.
+
+\[ OPT(i, j) \begin{cases} 
+    B_j + C_j(a_i) & i = 1; a_i \: se\: \: puede\: codificar\: con\: C_j \\
+    \infty & a_i \: no \: se\: \: puede\: codificar\: con\: C_j \\
+    min\{OPT(i - 1, j) + C_j(a_i), & i > 1\\
+    OPT(i - 1, (j+1) \bmod{4}) + T_{(j+1) \bmod{4}} + C_j(a_i), \\
+    OPT(i - 1, (j+2) \bmod{4}) + T_{(j+2) \bmod{4}} +C_j(a_i), \\ 
+    OPT(i - 1, (j+3) \bmod{4}) + T_{(j+3) \bmod{4}} + C_j(a_i)\}
+ \end{cases}
+\]
+
+\paragraph{Prueba:}
+Sea $X$ una solución óptima para el subproblema que considera a la subcadena $\{a_1a_2 \cdots a_{i}\}$.
+Suponga que $a_i$ puede ser codificado por $C_j$. Sea $X' = X / \{a_i\}$. Note que $X'$ es una solución óptima para el
+subproblema. (Vea análisis anterior). Por lo tanto:
+
+\begin{itemize}
+    \item Cuando $a_{i-1}$ puede ser codificado por el modo $C_j$. Entonces:
+    \begin{center}
+        $OPT(i,j) = OPT(i-1, j) + C_j(a_i)$
+    \end{center}
+    \item Cuando $a_{i-1}$ no puede ser codificado por el modo $C_j$. Se debe añadir una transición $T_k$ del modo
+    $C_k$ donde $ 1 \leq k \leq 4$ que sí codifica $a_{i-1}$
+    \begin{center}
+        $ OPT(i,j) = min\{OPT(i - 1, (j+1) \bmod{4}) + T_{(j+1) \bmod{4}} + C_j(a_i)$, \\
+        $OPT(i - 1, (j+2) \bmod{4}) + T_{(j+2) \bmod{4}} +C_j(a_i)$, \\ 
+        $OPT(i - 1, (j+3) \bmod{4}) + T_{(j+3) \bmod{4}} + C_j(a_i)\}$
+    \end{center}
+\end{itemize}
+
+Ahora suponga que $a_i$ no puede ser codificado por $C_j$. Entonces:
+\begin{center}
+    $OPT(i,j) = \infty$
+\end{center}
+
+El análisis anterior nos permite diseñar un algoritmo recursivo para el problema.
+
+\newpage 
+
+\subsection{Pregunta 3}
+
+\noindent RECIBE: un índice final $i$ de una cadena $s$ y un índice $j$ de $C$.\\
+DEVUELVE: Una cadena $r$ que codifica a $s$ de manera mínima óptima con $C_j(a_i)$.
+
+\begin{algorithmic}[1]
+\item[]{\textbf{OPT($i$, $j$)}}
+\If{($a_i$ puede ser codificado por $C_j)$ y $i = 1$}
+\State \textbf{return} $B_j + C_j(a_i)$
+\EndIf
+\If {($a_i$ no puede ser codificado por $C_j)$}
+\State \textbf{return} $\infty$
+\EndIf
+\State $A_0 = C_j(a_i)$
+\State $A_1 = T_{(j+1)\bmod{4}} + C_j(a_i)$
+\State $A_2 = T_{(j+2)\bmod{4}} + C_j(a_i)$
+\State $A_3 = T_{(j+3)\bmod{4}} + C_j(a_i)$
+\State $r=min(OPT(i-1,j) + A_0, OPT(i-1,(j+1)\bmod{4}) + A_1, OPT(i-1,(j+2)\bmod{4}) + A_2, OPT(i-1,(j+3)\bmod{4}) + A_3)$
+\State \textbf{return r} 
+\end{algorithmic}
+
+\vspace{0.5cm}
+
+\noindent RECIBE: un cadena $s$ no vacía.\\
+DEVUELVE: Una cadena que codifica a $s$ de manera mínima óptima.
+\begin{algorithmic}[1]
+\item[]{\textbf{MIN-COD($s$)}}
+\State Sea $a_n$ el caracter final de $s$.  
+\State \textbf{return} $min(OPT(a_n,0), OPT(a_n,1), OPT(a_n,2), OPT(a_n,3))$  
+\end{algorithmic}
+
+\subsubsection{Complejidad}
+
+En \emph{OPT(i,j)} se realizan cuatro llamadas recursivas para intentar codificar con los modos $C_1,C_2,C_3,C_4$ 
+a cada caracter de la cadena $s$. Por lo tanto, $T(n) = \Omega(4^n)$.\\
+
+En \emph{MIN-COD(s)} se envía a \emph{OPT(i,j)} los cuatros modos diferentes con los que se puede codificar el caracter 
+$a_n$. Sin embargo, aún cuando se llama cuatro veces a OPT, la recursividad total sigue siendo $\Omega(4^n)$.
+
+\newpage
+
+\subsection{Pregunta 4}
+
+\noindent RECIBE: un índice final $i$ de una cadena $s$ y un índice $j$ de $C$.\\
+DEVUELVE: Una cadena $r$ que codifica a $s$ de manera mínima óptima con $C_j(a_i)$.
+
+\begin{algorithmic}[1]
+\item[]{\textbf{OPT-MEMOIZADO($i$, $j$)}}
+\If{i == 0 OR $A[i][j] \neq \infty$}
+\State \textbf{return} $A[i][j]$
+\EndIf
+\If {$a_i$ puede ser codificado por $C_j$}
+    \State $A_0 = $ OPT-MEMOIZADO$(i-1, j) + C_j(a_i)$
+    \State $A_1 = $ OPT-MEMOIZADO$(i-1, (j+1)\bmod{4}) + T_{(j+1) \bmod{4}} + C_j(a_i)$
+    \State $A_2 = $ OPT-MEMOIZADO$(i-1, (j+2)\bmod{4}) + T_{(j+2) \bmod{4}} + C_j(a_i)$
+    \State $A_3 = $ OPT-MEMOIZADO$(i-1, (j+3)\bmod{4}) + T_{(j+3) \bmod{4}} + C_j(a_i)$
+    \State $A[i][j] =min(A_0, A_1, A_2, A_3)$
+\EndIf
+\State \textbf{return} $A[i][j]$
+\end{algorithmic}
+
+\vspace{0.5cm}
+
+\noindent RECIBE: un cadena $s$ no vacía.\\
+DEVUELVE: Una cadena que codifica a $s$ de manera mínima óptima.
+\begin{algorithmic}[1]
+\item[]{\textbf{MIN-COD-MEM($s$)}}
+\State $A[0][0] = 00$ 
+\State $A[0][1] = 01$ 
+\State $A[0][2] = 10$ 
+\State $A[0][3] = 11$
+\For{i = 1 to n}
+    \State $A[i][0\cdots3] = \infty$ 
+\EndFor 
+\State Sea $a_n$ el caracter final de $s$.  
+\State \textbf{return} $min(OPT(a_n,0), OPT(a_n,1), OPT(a_n,2), OPT(a_n,3))$  
+\end{algorithmic}
+
+
+\subsubsection{Complejidad}
+
+En \emph{OPT(i,j)} se realizan cuatro llamadas recursivas para intentar codificar con los modos $C_1,C_2,C_3,C_4$ 
+a cada caracter de la cadena $s$. Sin embargo, una vez que se haya calculado la solución $A[i][j]$ esta se guarda en 
+una matriz $A$. Asumiendo que la concatenación de caracteres de las líneas 4-7 tiene costo $O(1)$ entonces la 
+recurrencia memoizada es $O(n)$.
+
+En \emph{MIN-COD(s)} se envía a \emph{OPT(i,j)} los cuatros modos diferentes con los que se puede codificar el caracter 
+$a_n$. En la matriz $A$ se asignan los valores previos iniciales $B$, así como valores $\infty$ para el resto de la matriz.
+
+\newpage
+
+\subsection{Pregunta 5}
+\noindent RECIBE: una cadena $s$.\\
+DEVUELVE: Una cadena $r$ que codifica a $s$ de manera mínima óptima.
+
+\begin{algorithmic}[1]
+\item[]{MIN-COD-DIN($s$)}
+\State Sea $A$ una matriz que guarda la solución.
+\State $A[0][0] = 00$ 
+\State $A[0][1] = 01$ 
+\State $A[0][2] = 10$ 
+\State $A[0][3] = 11$
+\For{i = 1 to n}
+    \State $A[i][1] = \infty$
+    \State $A[i][2] = \infty$
+    \State $A[i][3] = \infty$
+    \State $A[i][4] = \infty$
+    \For{j = 0 to 3}
+        \If{Si $a_i$ puede ser codificado con $C_j$}
+            \State $M_1 = A[i-1][j] + C_j(a_i)$
+            \State $M_2 = A[i-1][(j+1)\bmod{4}] + T_{(j+1)\bmod{4}} + C_{j}(a_i)$
+            \State $M_3 = A[i-1][(j+2)\bmod{4}] + T_{(j+2)\bmod{4}} + C_{j}(a_i)$
+            \State $M_4 = A[i-1][(j+3)\bmod{4}] + T_{(j+3)\bmod{4}} + C_{j}(a_i)$
+            \State $A[i][j] = min(M_1, M_2, M_3, M_4)$
+            \State
+        \EndIf
+    \EndFor
+\EndFor
+\State $r = min(A[n][1], A[n][2], A[n][3], A[n][4])$
+\State \textbf{return r}
+
+
+\subsubsection{Complejidad}
+
+En \emph{MIN-COD(s)} se envía a \emph{OPT(i,j)} los cuatros modos diferentes con los que se puede codificar el caracter 
+$a_n$. Sin embargo, aún cuando se llama cuatro veces a OPT, la recursividad total sigue siendo $\Omega(4^n)$.
+
+\end{algorithmic}
