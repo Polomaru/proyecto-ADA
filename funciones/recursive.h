@@ -1,7 +1,6 @@
+#ifndef _FUNCTIONS_RECU_
+#define _FUNCTIONS_RECU_
 #include "util.h"
-
-std::vector<std::string> B = {"00","01","10","11"};
-std::vector<std::string> cod = {"C1","C2","C3","C4"};
 
 std::pair<std::string,int> OPT(std::string s, int i, int j)
 {
@@ -21,8 +20,8 @@ std::pair<std::string,int> OPT(std::string s, int i, int j)
 
     p1 = OPT(s,i-1, j);
     p2 = OPT(s,i-1, (j+1)%4);
-    p3 = OPT(s,i-1, (j+1)%4);
-    p4 = OPT(s,i-1, (j+1)%4);
+    p3 = OPT(s,i-1, (j+2)%4);
+    p4 = OPT(s,i-1, (j+3)%4);
 
     std::string m1, m2, m3, m4;
 
@@ -65,11 +64,4 @@ std::string min_cod_recursivo(std::string s)
     else if(*i1 == p3.second) return p3.first;
     else if(*i1 == p4.second) return p4.first; 
 }
-
-int main()
-{
-    auto i = min_cod_recursivo("`0aa");
-
-    std::cout<< i.size()<<std::endl;
-    std::cout<<i;
-}
+#endif

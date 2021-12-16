@@ -1,3 +1,6 @@
+#ifndef _FUNCTIONS_UTIL_
+#define _FUNCTIONS_UTIL_
+
 #include <iostream>
 #include <bitset>
 #include <unordered_map>
@@ -184,3 +187,4 @@ int minelement (int v [])
 {
     return *(std::min_element(v, v + 4));
 }
+#endif

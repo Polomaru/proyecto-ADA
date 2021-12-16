@@ -1,9 +1,7 @@
+#ifndef _FUNCTIONS_DYN_
+#define _FUNCTIONS_DYN_
+
 #include "util.h"
-
-
-
-std::vector<std::string> B = {"00","01","10","11"};
-std::vector<std::string> cod = {"C1","C2","C3","C4"};
 
 std::string min_cod_din(std::string s)
 {
@@ -88,11 +86,4 @@ std::string min_cod_din(std::string s)
     }
     return sreturn;
 }
-int main()
-{
-    auto i = min_cod_din("`0aa");
-
-    std::cout<<i.size()<<std::endl;
-    std::cout<<i;
-
-}
+#endif
