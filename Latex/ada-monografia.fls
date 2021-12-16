@@ -1,140 +1,142 @@
-PWD d:\atom\ada\proyecto-ADA\Latex
-INPUT C:\Users\Paul\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\atom\ada\proyecto-ADA\Latex\ada-monografia.tex
-OUTPUT d:\atom\ada\proyecto-ADA\Latex\ada-monografia.log
-INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
-INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
-INPUT C:\Program Files\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\babel\babel.def
-INPUT C:\Program Files\MiKTeX\tex\generic\babel\txtbabel.def
-INPUT C:\Program Files\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\Paul\AppData\Roaming\MiKTeX\tex\latex\babel-spanish\spanish.ldf
-INPUT C:\Users\Paul\AppData\Roaming\MiKTeX\tex\latex\babel-spanish\spanish.ldf
-INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Paul\AppData\Roaming\MiKTeX\tex\latex\mathtools\mathtools.sty
-INPUT C:\Users\Paul\AppData\Roaming\MiKTeX\tex\latex\mathtools\mathtools.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\tools\calc.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\tools\calc.sty
-INPUT C:\Users\Paul\AppData\Roaming\MiKTeX\tex\latex\mathtools\mhsetup.sty
-INPUT C:\Users\Paul\AppData\Roaming\MiKTeX\tex\latex\mathtools\mhsetup.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\Paul\AppData\Roaming\MiKTeX\tex\latex\algorithms\algorithm.sty
-INPUT C:\Users\Paul\AppData\Roaming\MiKTeX\tex\latex\algorithms\algorithm.sty
-INPUT C:\Users\Paul\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\Paul\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\base\ifthen.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\base\ifthen.sty
-INPUT C:\Users\Paul\AppData\Roaming\MiKTeX\tex\latex\algorithmicx\algpseudocode.sty
-INPUT C:\Users\Paul\AppData\Roaming\MiKTeX\tex\latex\algorithmicx\algpseudocode.sty
-INPUT C:\Users\Paul\AppData\Roaming\MiKTeX\tex\latex\algorithmicx\algorithmicx.sty
-INPUT C:\Users\Paul\AppData\Roaming\MiKTeX\tex\latex\algorithmicx\algorithmicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\tools\bm.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\tools\bm.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT d:\atom\ada\proyecto-ADA\Latex\ada-monografia.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\ada-monografia.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\titlepage.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\titlepage.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\mincod.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\mincod.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\software.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\software.aux
-OUTPUT d:\atom\ada\proyecto-ADA\Latex\ada-monografia.aux
-INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-OUTPUT d:\atom\ada\proyecto-ADA\Latex\titlepage.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\titlepage.tex
-INPUT d:\atom\ada\proyecto-ADA\Latex\titlepage.tex
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT d:\atom\ada\proyecto-ADA\Latex\logo.jpg
-INPUT d:\atom\ada\proyecto-ADA\Latex\logo.jpg
-OUTPUT d:\atom\ada\proyecto-ADA\Latex\ada-monografia.pdf
-INPUT d:\atom\ada\proyecto-ADA\Latex\logo.jpg
-INPUT d:\atom\ada\proyecto-ADA\Latex\logo.jpg
-INPUT d:\atom\ada\proyecto-ADA\Latex\logo.jpg
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-INPUT C:\Users\Paul\AppData\Local\MiKTeX\pdftex\config\pdftex.map
-OUTPUT d:\atom\ada\proyecto-ADA\Latex\mincod.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\mincod.tex
-INPUT d:\atom\ada\proyecto-ADA\Latex\mincod.tex
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
-OUTPUT d:\atom\ada\proyecto-ADA\Latex\software.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\software.tex
-INPUT d:\atom\ada\proyecto-ADA\Latex\software.tex
-INPUT d:\atom\ada\proyecto-ADA\Latex\ada-monografia.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\titlepage.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\titlepage.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\mincod.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\mincod.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\software.aux
-INPUT d:\atom\ada\proyecto-ADA\Latex\software.aux
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+PWD /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.tex
+OUTPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.log
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/titlepage.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/titlepage.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/mincod.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/mincod.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/software.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/software.aux
+OUTPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.aux
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+OUTPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/titlepage.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/titlepage.tex
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/titlepage.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/logo.jpg
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/logo.jpg
+OUTPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.pdf
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/logo.jpg
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/mincod.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/mincod.tex
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/mincod.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+OUTPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/software.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/software.tex
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/software.tex
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/imagenes/voraz.png
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/imagenes/voraz.png
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/imagenes/voraz.png
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/imagenes/optima.png
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/imagenes/optima.png
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/imagenes/optima.png
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/imagenes/decode.png
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/imagenes/decode.png
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/imagenes/decode.png
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/imagenes/software.png
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/imagenes/software.png
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/imagenes/software.png
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/ada-monografia.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/titlepage.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/titlepage.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/mincod.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/mincod.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/software.aux
+INPUT /home/pedro/Onedrive/UTEC/UTEC CS/2021 - II/Análisis y algoritmos de datos (ADA)/ADA-proyecto/Latex/software.aux
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
