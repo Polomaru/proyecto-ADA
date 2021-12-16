@@ -178,7 +178,7 @@ DEVUELVE: Una cadena que codifica a $s$ de manera mínima óptima.
 
 En \emph{OPT(i,j)} se realizan cuatro llamadas recursivas para intentar codificar con los modos $C_1,C_2,C_3,C_4$ 
 a cada caracter de la cadena $s$. Sin embargo, una vez que se haya calculado la solución $A[i][j]$ esta se guarda en 
-una matriz $A$. Asumiendo que la concatenación de caracteres de las líneas 4-7 tiene costo $O(1)$ entonces la 
+una matriz $A$. Asumiendo que la concatenación de bits de las líneas 4-7 tiene costo $O(1)$ entonces la 
 recurrencia memoizada es $O(n)$.
 
 En \emph{MIN-COD(s)} se envía a \emph{OPT(i,j)} los cuatros modos diferentes con los que se puede codificar el caracter 
@@ -215,11 +215,12 @@ DEVUELVE: Una cadena $r$ que codifica a $s$ de manera mínima óptima.
 \EndFor
 \State $r = min(A[n][1], A[n][2], A[n][3], A[n][4])$
 \State \textbf{return r}
+\end{algorithmic}
 
 
 \subsubsection{Complejidad}
 
-En \emph{MIN-COD(s)} se envía a \emph{OPT(i,j)} los cuatros modos diferentes con los que se puede codificar el caracter 
-$a_n$. Sin embargo, aún cuando se llama cuatro veces a OPT, la recursividad total sigue siendo $\Omega(4^n)$.
+En \emph{MIN-COD-DIN(s)} asumiendo que la concantenación de cadenas de bits es $O(1)$ es claro que el algoritmo es $\Omega(n)$. 
+Los cuatros modos diferentes de la recurrencia aumentan el costo lineal en cuatro. La respuesta óptima del algoritmo está
+en el valor mínimo de $A[n][1], A[n][2], A[n][3]$ y $A[n][4]$.
 
-\end{algorithmic}
